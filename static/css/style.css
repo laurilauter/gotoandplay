@@ -1,6 +1,6 @@
-div {
+/* div {
   border: 1px solid red;
-}
+} */
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -10,26 +10,241 @@ div {
 - Youtube player
 */
 
-/* mobile */
-@media (min-width: 550px) {
-}
+/* small devices */
 
-/* Larger than desktop */
-@media (min-width: 1200px) {
+@media (max-width: 575px) {
   /* Layout */
 
-  .row {
-    margin-top: 10vh;
-    width: 100%;
-
+  .container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    margin: 20px 0px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .row-inner {
+    margin-top: 20px;
+    display: block;
+    width: 90%;
+  }
+
+  .contact-container {
+    display: none;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 90%;
+  }
+
+  /* END Layout */
+
+  /* Video */
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .video-wrapper {
+    width: 90%;
+    height: fit-content;
+  }
+
+  /* END Video */
+
+  /* Fonts */
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Ubuntu Mono", monospace;
+    color: #e4ded3;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    word-break: break-all;
+    white-space: normal;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: #e4ded3;
+    text-decoration-thickness: 2px;
+  }
+
+  /* END Fonts */
+}
+
+/* mobile big*/
+
+@media (min-width: 576px) {
+  /* Layout */
+
+  .container {
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    margin: 20px 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
   }
 
   .row-inner {
+    margin: 20px;
+    padding-bottom: 20px;
     display: block;
+    width: 90%;
+    height: fit-content;
+  }
+
+  .contact-container {
+    display: none;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 90%;
+  }
+
+  /* END Layout */
+
+  /* Video */
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
     width: 100%;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .video-wrapper {
+    width: 90%;
+    height: fit-content;
+  }
+
+  /* END Video */
+
+  /* Fonts */
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Ubuntu Mono", monospace;
+    color: #e4ded3;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: #e4ded3;
+    text-decoration-thickness: 2px;
+  }
+
+  /* END Fonts */
+}
+
+/* Larger than desktop */
+@media (min-width: 992px) {
+  /* Layout */
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .row-inner {
+    margin-top: 20px;
+    display: block;
+    width: 80%;
   }
 
   .contact-container {
@@ -68,16 +283,55 @@ div {
   }
 
   /* END Video */
+
+  /* Fonts */
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Ubuntu Mono", monospace;
+    color: #e4ded3;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: #e4ded3;
+    text-decoration-thickness: 2px;
+  }
+
+  /* END Fonts */
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1535px) {
   /* Layout */
 
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
   .row {
-    background-color: black;
-    margin-top: 15vh;
-    /* margin-bottom: auto; */
     max-height: 70vh;
     width: 100%;
     display: flex;
@@ -90,17 +344,17 @@ div {
   }
 
   .content-wrapper {
+    width: 30%;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    width: 30%;
   }
 
   .contact-container {
     display: inline-block;
-    align-self: flex-end;
+    align-self: flex-start;
     margin-bottom: 0px;
-    padding-right: 50px;
+    width: 100%;
   }
 
   /* END Layout */
@@ -124,10 +378,63 @@ div {
 
   .video-wrapper {
     width: 100vh;
-    height: auto;
+    height: fit-content;
   }
 
   /* END Video */
+
+  /* Fonts */
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Ubuntu Mono", monospace;
+    color: #e4ded3;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    line-height: 1.4em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: #e4ded3;
+    text-decoration-thickness: 2px;
+  }
+
+  /* END Fonts */
+}
+
+@media (orientation: landscape) {
+  .container {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    padding: 10px;
+    /* margin: 20px 0px; */
+    /* width: 100%;
+    height: 80%; */
+    /* margin-top: 10%; */
+  }
 }
 
 /* General */
@@ -142,52 +449,3 @@ body {
 }
 
 /* END General */
-
-/* Fonts */
-p,
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Ubuntu Mono", monospace;
-  color: #e4ded3;
-}
-
-h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 1.8em;
-  line-height: 1.4em;
-  /* border: 1px solid green; */
-}
-
-p {
-  font-size: 1.2em;
-  /* border: 1px solid green; */
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  text-decoration-color: #e4ded3;
-  text-decoration-thickness: 2px;
-}
-
-/* END Fonts */
-
-/* Layout */
-
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-}
-
-/* END Layout */
