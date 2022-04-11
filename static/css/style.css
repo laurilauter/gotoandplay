@@ -1,16 +1,21 @@
-/* div {
-  border: 1px solid red;
-} */
-
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- small mobile devices
+  - Layout
+  - Video
+  - Fonts
+- big mobile devices
+  - ...
+- medium screens
+  - ...
+- large screens
+  - ...
+- Orientation landscape
 - General
-- Fonts
-- Layout
-- Youtube player
+––––––––––––––––––––––––––––––––––––––––––––––––––
 */
 
-/* small devices */
+/* small mobile devices */
 
 @media (max-width: 575px) {
   /* Layout */
@@ -116,14 +121,12 @@
   /* END Fonts */
 }
 
-/* mobile big*/
+/* big mobile devices */
 
 @media (min-width: 576px) {
   /* Layout */
 
   .container {
-    /* width: 100%;
-    height: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +224,7 @@
   /* END Fonts */
 }
 
-/* Larger than desktop */
+/* medium screens */
 @media (min-width: 992px) {
   /* Layout */
 
@@ -321,7 +324,7 @@
   /* END Fonts */
 }
 
-/* Larger than Desktop HD */
+/* large screens */
 @media (min-width: 1535px) {
   /* Layout */
 
@@ -419,6 +422,7 @@
   /* END Fonts */
 }
 
+/* Orientation landscape */
 @media (orientation: landscape) {
   .container {
     width: auto;
@@ -430,10 +434,6 @@
 
   .row {
     padding: 10px;
-    /* margin: 20px 0px; */
-    /* width: 100%;
-    height: 80%; */
-    /* margin-top: 10%; */
   }
 }
 
